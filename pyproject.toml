@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "platega"
+version = "0.1.0"
+description = "A comprehensive Python library for the Platega.io API"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["platega", "api", "payments", "async", "httpx"]
+authors = [
+  {name = "Komaru", email = "hov656985@gmail.com"},
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "httpx>=0.23.0",
+  "pydantic>=2.0.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/komarukomaru/platega#readme"
+Issues = "https://github.com/komarukomaru/platega/issues"
+Source = "https://github.com/komarukomaru/platega"
+
+[tool.hatch.build.targets.wheel]
+packages = ["platega"]
