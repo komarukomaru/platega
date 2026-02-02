@@ -1,3 +1,5 @@
+# **Unofficial**
+
 # Platega API Library
 
 A comprehensive Python library for interacting with the Platega.io API.
